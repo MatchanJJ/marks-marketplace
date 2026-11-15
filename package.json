@@ -12,7 +12,8 @@
     "start": "next start --hostname 127.0.0.1",
     "typecheck": "tsc --noEmit",
     "test": "node --test tests/*.test.mjs",
-    "test:marketplace": "node --env-file=.env.local tests/marketplace-smoke.mjs"
+    "test:marketplace": "node --env-file=.env.local tests/marketplace-smoke.mjs",
+    "seed:mock": "node --env-file=.env.local scripts/seed-mocks.mjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "2.119.0",

@@ -2,6 +2,10 @@
 
 Standalone Test 3 app: browse photo listings, filter categories, search titles, publish listings, and save private buyer messages. Built with Next.js, React, TypeScript, Tailwind CSS, shadcn/ui, and Supabase.
 
+Live app: https://marks-marketplace.vercel.app
+
+Repository: https://github.com/MatchanJJ/marks-marketplace
+
 ## Run locally
 
 Use Node.js 24. Run `npm ci`, copy `.env.example` to `.env.local`, and enter the marketplace project's public URL and publishable key. Run `npm run dev` and open http://127.0.0.1:3000.
@@ -34,3 +38,7 @@ Build and development use Next.js's supported webpack option because the CSS wor
 Use this repository's own Vercel project. Add `NEXT_PUBLIC_MARKETPLACE_SUPABASE_URL` and `NEXT_PUBLIC_MARKETPLACE_SUPABASE_PUBLISHABLE_KEY` before building. Never place a service-role/secret key in public environment variables. `.env.local` and `.vercel` are ignored.
 
 Production verification and screenshots are recorded in `TESTING.md`. This app has no dependency on the wall repository, database, or Vercel project. No application is automatically submitted.
+
+## Mock listings
+
+Run `npm run seed:mock` with the marketplace public settings to add one clearly labelled stock-photo mock listing per category. It skips existing mock titles, checks category coverage and image retrieval, and uses only `demo@example.com` as a contact. [Photo sources and credits](PHOTO-CREDITS.md) are included in the repository and mock descriptions. No mock item is offered for sale.

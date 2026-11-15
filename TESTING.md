@@ -13,6 +13,8 @@ Verified on November 15, 2026.
 - Responsive: measured a 387-pixel viewport; browse, detail, and listing form had no horizontal overflow. Category navigation and message submission worked at phone width. Restored the browser pane after the check.
 - Stock mock data: one labelled Pexels-photo listing in each of the six categories. Seed script assertions verify category coverage, allowed local JPEG files, valid listing inputs, six saved records, and public image retrieval. All six category filters were also checked on the production site.
 
-Screenshots are in `artifacts/screenshots/`. The diagnostic demo listings/photos and private test messages remain for administrator review; all use `example.com` test contacts. No actual offers are advertised. Source URLs and photographer credits for the six mock photos are recorded in PHOTO-CREDITS.md and the listing descriptions.
+Screenshots are in `artifacts/screenshots/`. At the user's request, the four diagnostic Demo listings and their four linked test messages were removed. An administrator count and the live browse page confirm only the six stock-photo mock listings remain. The uploaded diagnostic images remain in Storage; no storage files were deleted. No actual offers are advertised. Source URLs and photographer credits for the six mock photos are recorded in PHOTO-CREDITS.md and the listing descriptions.
 
 No email delivery, seller inbox, payments, authentication, moderation, or application submission was tested or included. Anonymous posting requires abuse controls before broader public use.
+
+Cleanup verification: 6 listings, 0 Demo test listings, 0 buyer messages; live page has 6 mock listing links and 0 diagnostic Demo links. The live creation smoke test was not rerun after cleanup because it creates new diagnostic listings and messages.
